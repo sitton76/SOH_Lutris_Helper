@@ -17,7 +17,7 @@ OoT_Rom_Check() {
     OOT_INSTALLED=true
   fi
 
-  if [[ $OOT_HASH == *$oot_supported_hash_2 ]]; then
+  if [[ $OOT_HASH == *$oot_supported_hash_2* ]]; then
     echo "OoT Hash #2 Match!"
     cp $OOT_FILE $1
     OOT_INSTALLED=true
